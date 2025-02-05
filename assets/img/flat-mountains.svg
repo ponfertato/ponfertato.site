@@ -1,0 +1,33 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  style="margin:auto;background:rgba(NaN, NaN, NaN, 0);display:block;z-index:1;position:relative"
+  width="1600" height="900" preserveAspectRatio="xMidYMid" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      :root {
+        --background-color: #ffffff;
+        --triangle-color-light: #000000;
+        --triangle-color-dark: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #000000;
+          --triangle-color-light: #ffffff;
+          --triangle-color-dark: #000000;
+        }
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1600" height="900" fill="var(--background-color)"/>
+  <polygon fill="var(--triangle-color-light)" points="957 450 539 900 1396 900"/>
+  <polygon fill="var(--triangle-color-dark)" points="957 450 872.9 900 1396 900"/>
+  <polygon fill="var(--triangle-color-light)" points="-60 900 398 662 816 900"/>
+  <polygon fill="var(--triangle-color-dark)" points="337 900 398 662 816 900"/>
+  <polygon fill="var(--triangle-color-light)" points="1203 546 1552 900 876 900"/>
+  <polygon fill="var(--triangle-color-dark)" points="1203 546 1552 900 1162 900"/>
+  <polygon fill="var(--triangle-color-light)" points="641 695 886 900 367 900"/>
+  <polygon fill="var(--triangle-color-dark)" points="587 900 641 695 886 900"/>
+  <polygon fill="var(--triangle-color-light)" points="1710 900 1401 632 1096 900"/>
+  <polygon fill="var(--triangle-color-dark)" points="1710 900 1401 632 1365 900"/>
+  <polygon fill="var(--triangle-color-light)" points="1210 900 971 687 725 900"/>
+  <polygon fill="var(--triangle-color-dark)" points="943 900 1210 900 971 687"/>
+</svg>

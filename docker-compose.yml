@@ -1,0 +1,11 @@
+---
+services:
+  hugo:
+    command: server --appendPort=false --baseURL=https://potatoenergy.ru/ --buildDrafts --disableFastRender
+    container_name: hugo
+    image: ghcr.io/hugomods/hugo:base
+    ports:
+      - "1313:1313"
+    restart: unless-stopped
+    volumes:
+      - .:/src

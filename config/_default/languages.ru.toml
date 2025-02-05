@@ -1,0 +1,42 @@
+disabled = false
+languageCode = "ru"
+languageName = "Русский"
+weight = 1
+title = "Ponfertato"
+
+[params]
+displayName = "RU"
+isoCode = "ru"
+rtl = false
+dateFormat = "2 January 2006"
+# logo = "img/logo.png"
+# secondaryLogo = "img/logo.png"
+description = "ponfertato.site"
+copyright = "© 2019-{ year } Ponfertato"
+
+[params.author]
+image = "img/ponfertato.png"
+# imageQuality = 96
+name = "Ponfertato"
+email = "ponfertato@potatoenergy.ru"
+headline = "Кирилл Плотников"
+bio = "Гаджет-мастер, технологический эксперт и преданный картофанатор 🥔 а так же системный администратор Cisco/NauSoft "
+links = [
+  { bluesky = "https://bsky.app/profile/ponfertato.potatoenergy.ru" },
+  { discord = "https://discordapp.com/users/ponfertato" },
+  { telegram = "https://t.me/ponfertato" },
+  { vk = "https://vk.com/ponfertato" },
+  { steam = "https://steamcommunity.com/profiles/ponfertato" },
+  { codeberg = "https://codeberg.org/ponfertato"},
+  { github = "https://github.com/ponfertato" },
+  { gitlab = "https://gitlab.com/ponfertato" },
+  { docker = "https://hub.docker.com/u/ponfertato" },
+  { lastfm = "https://lastfm.com/user/ponfertato" },
+  { email = "mailto:ponfertato@potatoenergy.ru" },
+  { orcid = "https://orcid.org/0009-0008-4939-5484" },
+#  { facebook = "https://facebook.com/ponfertato" },
+#  { instagram = "https://instagram.com/ponfertato" },
+#  { link = "https://link-to-some-website.com/" },
+#  { soundcloud = "https://soundcloud.com/ponfertato" },
+#  { x-twitter = "https://twitter.com/ponfertato" },
+]
