@@ -1,44 +1,34 @@
 disabled = false
-languageCode = "en"
 languageName = "English"
-weight = 2
+locale = "en"
 title = "Ponfertato"
+weight = 2
 
 [params]
+copyright = "© 2019-{ year } Ponfertato"
+dateFormat = "2 January 2006"
 displayName = "EN"
 isoCode = "en"
 rtl = false
-dateFormat = "2 January 2006"
-# logo = "img/logo.png"
-# secondaryLogo = "img/logo.png"
-description = "ponfertato.site"
-copyright = "© 2019-{ year } Ponfertato"
 
 [params.author]
-image = "img/ponfertato.png"
-name = "Ponfertato"
-email = "ponfertato@potatoenergy.ru"
-headline = "Kirill Plotnikov"
 bio = "Gadget wizard, technology expert and dedicated potato fanatic 🥔 as well as Cisco/NauSoft system administrator"
+headline = "Kirill Plotnikov"
+image = "img/ponfertato.png"
+name = "Kirill Plotnikov"
 links = [
   { bluesky = "https://bsky.app/profile/ponfertato.potatoenergy.ru" },
+  { codeberg = "https://codeberg.org/ponfertato" },
   { discord = "https://discordapp.com/users/ponfertato" },
-  { telegram = "https://t.me/ponfertato" },
-  { vk = "https://vk.com/ponfertato" },
-  { steam = "https://steamcommunity.com/profiles/ponfertato" },
-  { wakatime = "https://wakatime.com/@ponfertato" },
-  { codeberg = "https://codeberg.org/ponfertato"},
+  { email = "mailto:ponfertato@potatoenergy.ru" },
   { github = "https://github.com/ponfertato" },
   { gitlab = "https://gitlab.com/ponfertato" },
-  { crowdin = "https://crowdin.com/profile/ponfertato" },
-  { weblate = "https://hosted.weblate.org/user/ponfertato" },
-  { docker = "https://hub.docker.com/u/ponfertato" },
-  { lastfm = "https://lastfm.com/user/ponfertato" },
-  { email = "mailto:ponfertato@potatoenergy.ru" },
+  { mastodon = "https://social.potatoenergy.ru/@ponfertato" },
+  { max = "https://max.ru/u/f9LHodD0cOKnC62lqxLZkv1WjyI_o1sYy9xqQFVTS0sCiILUvOsNqhC5H5s" },
+  { nextcloud = "https://cloud.potatoenergy.ru/u/ponfertato" },
   { orcid = "https://orcid.org/0009-0008-4939-5484" },
-#  { facebook = "https://facebook.com/ponfertato" },
-#  { instagram = "https://instagram.com/ponfertato" },
-#  { link = "https://link-to-some-website.com/" },
-#  { soundcloud = "https://soundcloud.com/ponfertato" },
-#  { x-twitter = "https://twitter.com/ponfertato" },
+  { steam = "https://steamcommunity.com/profiles/ponfertato" },
+  { telegram = "https://t.me/ponfertato" },
+  { vk = "https://vk.ru/ponfertato" },
+  { x-twitter = "https://x.com/ponfertato" }
 ]
