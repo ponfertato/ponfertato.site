@@ -1,5 +1,5 @@
-colorScheme = "blowfish"
-defaultAppearance = "light"
+colorScheme = "slate"
+defaultAppearance = "black"
 defaultBackgroundImage = "/img/flat-mountains.svg"
 
 [footer]
