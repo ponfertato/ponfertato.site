@@ -1,3 +1,4 @@
 baseURL = "https://ponfertato.potatoenergy.ru/"
 defaultContentLanguage = "ru"
 summaryLength = 0
+theme = "blowfish"
