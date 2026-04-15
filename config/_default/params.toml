@@ -1,9 +1,28 @@
 colorScheme = "slate"
 defaultAppearance = "black"
 defaultBackgroundImage = "/img/flat-mountains.svg"
+enableCodeCopy = true
 
-[footer]
-showThemeAttribution = false
+[header]
+layout = "basic"
 
 [homepage]
 layout = "background"
+
+[article]
+heroStyle = "thumbAndBackground"
+showDate = false
+showDateUpdated = false
+showReadingTime = false
+showHero = true
+showTags = true
+showTaxonomies = true
+layoutBackgroundHeaderSpace = false
+
+[list]
+cardView = true
+heroStyle = "thumbAndBackground"
+layoutBackgroundHeaderSpace = false
+showTableOfContents = true
+groupByYear = false
+showHero = true

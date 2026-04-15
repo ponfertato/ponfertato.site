@@ -1,7 +1,12 @@
 [[main]]
+name = "About"
+pageRef = "about"
+weight = 10
+
+[[main]]
 name = "Projects"
 pageRef = "projects"
-weight = 10
+weight = 20
 
 [[footer]]
 name = "RSS"
