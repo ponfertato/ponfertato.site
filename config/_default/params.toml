@@ -10,18 +10,22 @@ layout = "basic"
 layout = "background"
 
 [article]
-heroStyle = "thumbAndBackground"
+heroStyle = "background"
+layoutBackgroundHeaderSpace = false
+sharingLinks = [ "bluesky", "mastodon", "telegram", "email"]
+showAuthor = true
+showAuthorBottom = true
+showAuthorsBadges = false
 showDate = false
 showDateUpdated = false
-showReadingTime = false
 showHero = true
+showReadingTime = false
 showTags = true
 showTaxonomies = true
-layoutBackgroundHeaderSpace = false
 
 [list]
 cardView = true
-heroStyle = "thumbAndBackground"
+heroStyle = "background"
 layoutBackgroundHeaderSpace = false
 showTableOfContents = true
 groupByYear = false
