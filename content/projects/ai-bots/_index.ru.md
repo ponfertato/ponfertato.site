@@ -1,5 +1,5 @@
 ---
-title: "AI-боты: Архитектура интеграции в мессенджеры"
+title: "AI-боты: Архитектура интеграции в мессенджеры и игры"
 description: "Четыре реализации: Discord (Python), Pony.Town (TypeScript/Puppeteer), Telegram Business (PHP). Модульность, rate limiting, обход Cloudflare."
 tags:
   [
@@ -12,10 +12,7 @@ tags:
     "php",
     "typescript",
   ]
-layout: single
 ---
-
-## Обзор
 
 Четыре проекта, разные платформы, общая цель: интеграция языковых моделей в чат-интерфейсы с минимальной задержкой и максимальной надёжностью.
 

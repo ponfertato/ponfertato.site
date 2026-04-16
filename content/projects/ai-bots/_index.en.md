@@ -1,5 +1,5 @@
 ---
-title: "AI Bots: Messenger Integration Architecture"
+title: "AI Bots: Messenger and Games Integration Architecture"
 description: "Four implementations: Discord (Python), Pony.Town (TypeScript/Puppeteer), Telegram Business (PHP). Modularity, rate limiting, Cloudflare bypass."
 tags:
   [
@@ -12,10 +12,7 @@ tags:
     "php",
     "typescript",
   ]
-layout: single
 ---
-
-## Overview
 
 Four projects, different platforms, one goal: integrating language models into chat interfaces with minimal latency and maximum reliability.
 
