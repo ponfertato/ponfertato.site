@@ -1,6 +1,3 @@
 baseURL = "https://ponfertato.potatoenergy.ru/"
 defaultContentLanguage = "ru"
 theme = "blowfish"
-
-[params.social]
-fediverse_creator = "@ponfertato@social.potatoenergy.ru"
