@@ -30,3 +30,6 @@ layoutBackgroundHeaderSpace = false
 showTableOfContents = true
 groupByYear = false
 showHero = true
+
+[verification]
+fediverse = "@ponfertato@social.potatoenergy.ru"
