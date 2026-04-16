@@ -8,6 +8,11 @@ name = "Projects"
 pageRef = "projects"
 weight = 20
 
+[[main]]
+name = "Main site"
+url = "https://potatoenergy.ru/"
+weight = 999
+
 [[footer]]
 name = "RSS"
 url = "/index.xml"
