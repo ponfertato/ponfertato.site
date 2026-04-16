@@ -44,8 +44,8 @@ if is_active_channel or is_allowed_dm or contains_trigger_word or is_bot_mention
 
 **Features**:
 
-- `smart_mention` — ignores `@everyone`, responds only to direct mentions
-- `active_channels` — dynamic list managed via `/toggleactive`, stored in `channels.json`
+- `smart_mention` - ignores `@everyone`, responds only to direct mentions
+- `active_channels` - dynamic list managed via `/toggleactive`, stored in `channels.json`
 - Dialogue context limited to `MAX_HISTORY` messages for token control
 
 ### Personality System via External Files
@@ -61,7 +61,7 @@ def load_instructions(instruction):
 
 **Benefits**:
 
-- Add new personality without code changes — create `.txt` in `instructions/`
+- Add new personality without code changes - create `.txt` in `instructions/`
 - Instant switching via `/toggleactive persona:<name>`
 - Prompt isolation from business logic
 
@@ -107,7 +107,7 @@ services:
 
 - Auto-detect Replit environment via `REPL_OWNER`
 - Flask server for keep-alive pings in free cloud tiers
-- `.env` not committed — config via secrets in CI/CD
+- `.env` not committed - config via secrets in CI/CD
 
 ---
 
@@ -134,9 +134,9 @@ services:
 
 **Benefits**:
 
-- One image — multiple instances with different personalities and tokens
-- `watchtower.enable: false` — manual update control
-- `traefik.enable: false` — bots not exposed externally, internal network only
+- One image - multiple instances with different personalities and tokens
+- `watchtower.enable: false` - manual update control
+- `traefik.enable: false` - bots not exposed externally, internal network only
 
 ### Migration to Async OpenAI
 
@@ -164,8 +164,8 @@ async def generate_response(instructions, search, history):
 
 **Improvements**:
 
-- Non-blocking I/O — bot doesn't hang waiting for AI response
-- Custom `base_url` support — work with local proxies
+- Non-blocking I/O - bot doesn't hang waiting for AI response
+- Custom `base_url` support - work with local proxies
 - Graceful error handling: return error message instead of crash
 
 ### Dynamic Model Loading
@@ -183,7 +183,7 @@ def fetch_chat_models():
 ```
 
 - `/imagine` command automatically receives current model list
-- No hardcoded values — new backend models immediately available in bot
+- No hardcoded values - new backend models immediately available in bot
 
 ---
 
@@ -214,7 +214,7 @@ export class BrowserService {
 **Why Puppeteer**:
 
 - Cloudflare bypass via real browser emulation
-- Direct DOM interaction — independent of game API changes
+- Direct DOM interaction - independent of game API changes
 - Visual debugging capability (`headless: false`)
 
 ### Cloudflare Bypass Module
@@ -289,7 +289,7 @@ private buildPrompt(text: string, context: string): string {
 
 - Responses look like real player messages
 - Strict length limits prevent spam
-- Emojis replace punctuation — natural chat style
+- Emojis replace punctuation - natural chat style
 
 ---
 
@@ -300,7 +300,7 @@ private buildPrompt(text: string, context: string): string {
 ```
 src/
 ├── Config/      # Config validation, .env loading
-├── Core/        # Bot, WebhookHandler, StatusPage — core
+├── Core/        # Bot, WebhookHandler, StatusPage - core
 ├── AI/          # Interface + implementations: OpenAIProvider, OllamaProvider
 └── Exceptions/  # Typed errors
 ```
@@ -383,19 +383,19 @@ services:
       - "8008:80"
 ```
 
-- `db.json` — state storage (optional)
-- `rate_limit.json` — limit persistence across restarts
-- Port 8008 — easily proxied via Nginx/Traefik with HTTPS
+- `db.json` - state storage (optional)
+- `rate_limit.json` - limit persistence across restarts
+- Port 8008 - easily proxied via Nginx/Traefik with HTTPS
 
 ---
 
 ## Common Project Principles
 
-1. **Config outside code** — all parameters via `.env`, no hardcoded values
-2. **Interfaces over inheritance** — easy component replacement (AI providers, handlers)
-3. **State isolation** — each bot/instance operates independently
-4. **Security by default** — rate limiting, input validation, dangerous pattern blocking
-5. **Deployment-agnostic** — runs locally, on VPS, in Docker, in cloud
+1. **Config outside code** - all parameters via `.env`, no hardcoded values
+2. **Interfaces over inheritance** - easy component replacement (AI providers, handlers)
+3. **State isolation** - each bot/instance operates independently
+4. **Security by default** - rate limiting, input validation, dangerous pattern blocking
+5. **Deployment-agnostic** - runs locally, on VPS, in Docker, in cloud
 
 ---
 
