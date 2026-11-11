@@ -9,30 +9,30 @@ jobs:
   build:
     env:
       BASE_URL: https://ponfertato.potatoenergy.ru
-      DART_SASS_VERSION: 1.99.0
-      GO_VERSION: 1.26.2
-      HUGO_VERSION: 0.160.1
-      NODE_VERSION: 24.14.1
+      DART_SASS_VERSION: 1.108.2
+      GO_VERSION: 1.27.4
+      HUGO_VERSION: 0.169.0
+      NODE_VERSION: 26.13.0
       TZ: Europe/Moscow
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           submodules: recursive
       - name: Setup Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v7
         with:
           cache: false
           go-version: ${{ env.GO_VERSION }}
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
       - id: pages
         name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Create directory for user-specific executable files
         run: |
           mkdir -p "${HOME}/.local"
@@ -63,7 +63,7 @@ jobs:
           git config core.quotepath false
       - id: cache-restore
         name: Cache restore
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           key: hugo-${{ github.run_id }}
           path: ${{ runner.temp }}/hugo_cache
@@ -77,12 +77,12 @@ jobs:
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - id: cache-save
         name: Cache save
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
           path: ${{ runner.temp }}/hugo_cache
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
   deploy:
@@ -94,7 +94,7 @@ jobs:
     steps:
       - id: deployment
         name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 name: Build and deploy
 'on':
   push:
